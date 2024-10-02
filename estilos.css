@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #060613;
+    background-image: url('https://static.wixstatic.com/media/97b295_343224e0b87544f6b1e301fabbe07d6e~mv2.gif'); /* Usa una imagen o patrón que se repita */
+    background-repeat: repeat;
+    background-size: 200px 200px; /* Ajusta el tamaño del patrón */
+    animation: moveBackground 10s linear infinite; /* Aplica la animación */
+}
+
+/* Animación para el fondo */
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 0; /* Mueve el fondo a la derecha (ajusta el valor según la velocidad deseada) */
+    }
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* Ajustar el main para no superponer el header */
+main {
+    padding-top: 60px;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #11f7ff;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+/* Sección principal */
+main .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 160px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #fdfbfb;
+    padding: 20px;
+    background: #2d646e94;
+}
+
+.description {
+    max-width: 600px;
+}
+
+.description h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #d5cbcb;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f,0 0 20px rgb(242, 242, 242), 0 0 25px rgb(246, 246, 246), 0 0 30px rgb(250, 255, 255), 0 0 35px rgb(253, 255, 255);
+}
+
+.description{
+    font-size: 18px;
+    color: #4acde4;
+    background: #181c1c;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+h3 {
+    color: #11f7ff;
+}
+
+.git {
+    padding: 10px;
+}
+
+.link {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 70%;
+}
+
+audio{
+    opacity: 50%;
+    color-scheme: blue;
+}
